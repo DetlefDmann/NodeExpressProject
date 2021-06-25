@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "test": "jest --watchAll",
     "mon": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "DelefDmann",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "jest": "^27.0.5",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   }
 }
