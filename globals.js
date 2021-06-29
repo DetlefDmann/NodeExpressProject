@@ -1,4 +1,4 @@
 const owner = "Detlef"
-const listenPort = 5000;
+const listenPort = process.env.PORT || 5000;
 
 module.exports = { listenPort }
