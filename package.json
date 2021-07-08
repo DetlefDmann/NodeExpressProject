@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "browserslist": "> 0.25%, not dead",
+  "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "test": "jest --watchAll",
-    "mon": "nodemon app.js"
+    "start": "node ./src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "mon": "nodemon index.js"
   },
   "keywords": [],
   "author": "DelefDmann",
@@ -15,8 +17,15 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "babel-jest": "^27.0.6",
     "jest": "^27.0.5",
     "nodemon": "^2.0.7",
     "supertest": "^6.1.3"
+  },
+  "jest": {
+    "transform": {}
   }
 }

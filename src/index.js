@@ -1,5 +1,5 @@
-const app = require("./app");
-const { listenPort } = require("./globals");
+import app from "./app.js";
+import { listenPort } from "./globals.js";
 
 app.listen(listenPort, () => {
   console.log(`Server listening on port: ${listenPort}`);
