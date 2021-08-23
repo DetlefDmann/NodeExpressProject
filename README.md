@@ -10,7 +10,8 @@ Since I already know JavaScript , Node and Express seem the obvious tools.
 ## Use ES6 syntax for importing/exporting
 
 Jest and Node seem to have problems using ES6 syntax. Some changes in the package.json file should do the trick...
-Link to relevant info from [Sam Meechward](https://sammeechward.com/jest-and-esmodules/) and Jest [website](https://jestjs.io/docs/ecmascript-modules)
+Link to relevant info from [Sam Meechward](https://sammeechward.com/jest-and-esmodules/) and Jest [website](https://jestjs.io/docs/ecmascript-modules).
+For insight into the difference between Common JS modules and ES6 modules, I found [this website](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) enlightening.
 
 ## Start with a todo-list app
 
