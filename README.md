@@ -2,10 +2,12 @@
 
 ## Make a simple backend
 
-For a previous project. I needed a back-end and used a simple external API.
+For a previous project I needed a back-end and used a simple external API.
 When doing another private project I realised that I should not use someone elses backend if I want to store user-data.
 I am therefore trying to learn it for myself.
 Since I already know JavaScript , Node and Express seem the obvious tools.
+I am using test driven development for this project, both for actual testing before deploying and for declaring what I want the API to return before i'm writing the code.
+It also functions as a sort of documentation on how the app is intended to work.
 
 ## Use ES6 syntax for importing/exporting
 
