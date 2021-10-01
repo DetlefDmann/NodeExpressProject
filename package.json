@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
-    "mon": "nodemon index.js"
+    "mon": "nodemon ./src/index.js"
   },
   "keywords": [],
   "author": "DelefDmann",

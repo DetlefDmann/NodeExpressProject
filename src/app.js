@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.sendFile("/index.html");
 });
 app.get("/data", (req, res) => {
-  res.send({});
+  res.send({ message: "hoi" });
 });
 
 export default app;
