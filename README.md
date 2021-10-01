@@ -29,6 +29,19 @@ module.exports = { thisFunction, thatVariable };
 For someone like me, who wants to use ES6 syntax there is a solution.
 
 Some changes in the package.json file should do the trick...
+
+For using ES6 modules in node set type attribute in package.json to module,like this:
+
+```json
+    "type": "module",
+```
+
+To avoid getting into trouble with Jest, we also need to change how we run the tests by defining the test script as follows:
+
+```json
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+```
+
 Link to relevant info from [Sam Meechward](https://sammeechward.com/jest-and-esmodules/) and Jest [website](https://jestjs.io/docs/ecmascript-modules).
 For insight into the difference between Common JS modules and ES6 modules, I found [this website](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) enlightening.
 
