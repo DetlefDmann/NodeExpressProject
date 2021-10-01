@@ -23,7 +23,7 @@ const express = require("express");
 Exporting:
 
 ```javascript
-module.exports = { thisFunction, thatFunction };
+module.exports = { thisFunction, thatVariable };
 ```
 
 For someone like me, who wants to use ES6 syntax there is a solution.
