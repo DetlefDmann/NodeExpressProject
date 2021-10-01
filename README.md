@@ -11,7 +11,24 @@ It also functions as a sort of documentation on how the app is intended to work.
 
 ## Use ES6 syntax for importing/exporting
 
-Jest and Node seem to have problems using ES6 syntax. Some changes in the package.json file should do the trick...
+Jest and Node seem to have problems using ES6 syntax.
+You would have to use the old way of importing/exporting like so:
+
+Importing:
+
+```javascript
+const express = require("express");
+```
+
+Exporting:
+
+```javascript
+module.exports = { thisFunction, thatFunction };
+```
+
+For someone like me, who wants to use ES6 syntax there is a solution.
+
+Some changes in the package.json file should do the trick...
 Link to relevant info from [Sam Meechward](https://sammeechward.com/jest-and-esmodules/) and Jest [website](https://jestjs.io/docs/ecmascript-modules).
 For insight into the difference between Common JS modules and ES6 modules, I found [this website](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) enlightening.
 
@@ -23,3 +40,11 @@ I will use TDD with Jest, so I need to examine how to use Jest with a node/expre
 ## Jest and Supertest
 
 I came across a few videos that use a combination of Jest and Supertest.
+
+## Deploying
+
+In the end I would have to deploy the server somewhere.
+Options for that are :
+
+- [Heroku](https://www.heroku.com/)
+- [Glitch](https://glitch.com/)
