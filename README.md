@@ -52,7 +52,7 @@ I will use TDD with Jest, so I need to examine how to use Jest with a node/expre
 
 ## Jest and Supertest
 
-I came across a few videos that use a combination of Jest and Supertest.
+I came across a few videos that use a combination of Jest and Supertest. Supertest is a NPM package that provides a high level abstraction for testing HTTP. More on this [here](https://www.npmjs.com/package/supertest).
 
 ## Deploying
 
