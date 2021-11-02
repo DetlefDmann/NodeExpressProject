@@ -7,14 +7,15 @@
   "type": "module",
   "scripts": {
     "start": "node ./src/index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
     "mon": "nodemon ./src/index.js"
   },
   "keywords": [],
   "author": "DelefDmann",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
