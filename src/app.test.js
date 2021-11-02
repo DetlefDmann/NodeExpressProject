@@ -22,6 +22,7 @@ describe("Server responds with correct headers:", () => {
   });
   it("GET content-type text/html for index page:", async () => {
     const response = await request(app).get("/");
+    const page = response.body;
     expect(response.headers["content-type"]).toEqual(
       expect.stringContaining("html")
     );
