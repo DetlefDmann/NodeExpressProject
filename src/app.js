@@ -7,10 +7,10 @@ const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "/src/content")));
 
 app.get("/", (req, res) => {
-  res.sendFile("/index.html");
+  res.sendFile("/");
 });
 app.get("/data", (req, res) => {
-  res.send({ message: "hoi" });
+  res.send({ message: "Dit is random data.." });
 });
 
 export default app;
