@@ -8,7 +8,9 @@
   "scripts": {
     "start": "node ./src/index.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
-    "mon": "nodemon ./src/index.js"
+    "mon": "nodemon ./src/index.js",
+    "dockerup": "sudo docker-compose -f docker-compose.yaml up -d --build",
+    "dockerdown": "sudo docker-compose -f docker-compose.yaml down -v"
   },
   "keywords": [],
   "author": "DelefDmann",
