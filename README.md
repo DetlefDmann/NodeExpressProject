@@ -1,5 +1,7 @@
 # NodeExpressProject
 
+To use the docker functionality , first install [Docker](https://docs.docker.com/engine/install/)/[Docker Compose](https://docs.docker.com/compose/install/).
+
 ## Make a simple backend
 
 For a previous project I needed a back-end and used a simple external API.
