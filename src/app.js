@@ -5,6 +5,7 @@ import { router as todosRouter } from "./routes/todos.js";
 const app = express();
 const __dirname = path.resolve();
 
+//middleware
 app.use(express.static(path.join(__dirname, "/src/content")));
 app.use(express.json());
 
